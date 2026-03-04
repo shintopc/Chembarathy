@@ -10,17 +10,42 @@ export default function MenuItemCard({ item }) {
 
     return (
         <div className="glass-panel" style={{ display: 'flex', padding: '12px', gap: '16px', marginBottom: '16px', opacity: item.inStock ? 1 : 0.6 }}>
-            <img
-                src={item.image}
-                alt={item.name}
+            {item.image ? (
+                <img
+                    src={item.image}
+                    alt={item.name}
+                    onError={(e) => {
+                        e.target.style.display = 'none';
+                        e.target.nextSibling.style.display = 'flex';
+                    }}
+                    style={{
+                        width: '100px',
+                        height: '100px',
+                        objectFit: 'cover',
+                        borderRadius: '12px',
+                        border: '1px solid var(--glass-border)'
+                    }}
+                />
+            ) : null}
+            <div
                 style={{
+                    display: item.image ? 'none' : 'flex',
                     width: '100px',
                     height: '100px',
-                    objectFit: 'cover',
                     borderRadius: '12px',
-                    border: '1px solid var(--glass-border)'
+                    border: '1px solid var(--glass-border)',
+                    background: 'linear-gradient(135deg, rgba(212,175,55,0.15), rgba(204,0,0,0.1))',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontSize: '32px',
+                    fontWeight: '700',
+                    color: 'var(--accent-gold)',
+                    fontFamily: 'Inter',
+                    flexShrink: 0
                 }}
-            />
+            >
+                {item.name?.charAt(0)?.toUpperCase()}
+            </div>
 
             <div style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                 <div>
