@@ -16,35 +16,35 @@ import 'swiper/css/pagination';
 const slides = [
     {
         id: 1,
-        image: 'https://picsum.photos/seed/hero-restaurant/1000/600',
+        image: 'https://images.unsplash.com/photo-1552566626-52f8b828add9?w=1000&q=80',
         title: 'Welcome to Chembarathy',
         subtitle: 'Step into a world of elegance and tradition.'
     },
     {
         id: 2,
-        image: 'https://picsum.photos/seed/hero-food/1000/600',
+        image: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=1000&q=80',
         title: 'Authentic Flavours',
         subtitle: 'Signature dishes crafted with passion.'
     },
     {
         id: 3,
-        image: 'https://picsum.photos/seed/hero-bar/1000/600',
+        image: 'https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=1000&q=80',
         title: 'Premium Bar Experience',
         subtitle: 'Exquisite cocktails to elevate your evening.'
     }
 ];
 
 const signatureDishes = [
-    { id: 1, name: "Butter Chicken", price: "₹450", image: "https://picsum.photos/seed/butter-chicken/500/500", bestSeller: true, desc: "Rich tomato gravy, smoky chicken." },
-    { id: 2, name: "Mutton Biryani", price: "₹500", image: "https://picsum.photos/seed/mutton-biryani/500/500", bestSeller: true, desc: "Aromatic basmati, slow-cooked mutton." },
-    { id: 3, name: "Chicken Tikka", price: "₹350", image: "https://picsum.photos/seed/chicken-tikka/500/500", bestSeller: false, desc: "Tandoori charred chicken chunks." },
-    { id: 4, name: "Paneer Chili", price: "₹300", image: "https://picsum.photos/seed/paneer-chili/500/500", bestSeller: false, desc: "Spicy Indo-Chinese cottage cheese." },
+    { id: 1, name: "Butter Chicken", price: "₹450", image: "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?w=500&q=80", bestSeller: true, desc: "Rich tomato gravy, smoky chicken." },
+    { id: 2, name: "Mutton Biryani", price: "₹500", image: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=500&q=80", bestSeller: true, desc: "Aromatic basmati, slow-cooked mutton." },
+    { id: 3, name: "Chicken Tikka", price: "₹350", image: "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=500&q=80", bestSeller: false, desc: "Tandoori charred chicken chunks." },
+    { id: 4, name: "Paneer Chili", price: "₹300", image: "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=500&q=80", bestSeller: false, desc: "Spicy Indo-Chinese cottage cheese." },
 ];
 
 const cocktails = [
-    { id: 1, name: "Smoked Old Fashioned", image: "https://picsum.photos/seed/old-fashioned/500/700" },
-    { id: 2, name: "Spicy Margarita", image: "https://picsum.photos/seed/margarita/500/700" },
-    { id: 3, name: "Classic Negroni", image: "https://picsum.photos/seed/negroni/500/700" },
+    { id: 1, name: "Smoked Old Fashioned", image: "https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=500&q=80" },
+    { id: 2, name: "Spicy Margarita", image: "https://images.unsplash.com/photo-1536935338788-846bb9981813?w=500&q=80" },
+    { id: 3, name: "Classic Negroni", image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=500&q=80" },
 ];
 
 const reviews = [
@@ -54,10 +54,10 @@ const reviews = [
 ];
 
 const gallery = [
-    "https://picsum.photos/seed/gallery-1/500/500",
-    "https://picsum.photos/seed/gallery-2/500/500",
-    "https://picsum.photos/seed/gallery-3/500/500",
-    "https://picsum.photos/seed/gallery-4/500/500",
+    "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=500&q=80",
+    "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=500&q=80",
+    "https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=500&q=80",
+    "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500&q=80",
 ];
 
 export default function Home() {
